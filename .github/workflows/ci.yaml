@@ -17,12 +17,12 @@ jobs:
             - name: Build backend
               run: |
                 cd backend
-                docker build -t urlshortener:backend .
+                docker build -t test-repo:backend .
 
             - name: Build frontend
               run: |
                 cd frontend
-                docker build -t urlshortener:frontend .
+                docker build -t test-repo:frontend .
             
             # Login to Docker Hub
             - name: Login to Docker Hub
